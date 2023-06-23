@@ -10,6 +10,7 @@ def test_greeting():
     age = 25
     # TODO Сформируйте нужную строку
     output = "Привет, " + name + "! Тебе " + str(age) + " лет."
+    print(output)
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
 
@@ -44,6 +45,7 @@ def test_circle():
     #TODO сосчитайте длину окружности
     length = 2 * math.pi * r
     assert length == 144.51326206513048
+    print(f"Площадь = {area}, длина окружности = {length}")
 
 
 def test_random_list():
@@ -83,6 +85,6 @@ def test_dicts():
 
     # TODO создайте словарь
     d = dict(zip(first, second))
-
+    print(dict.keys(d))
     assert isinstance(d, dict)
     assert len(d) == 5
